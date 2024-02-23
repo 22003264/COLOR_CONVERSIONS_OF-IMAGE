@@ -41,7 +41,8 @@ Register Number: 212222230103
 ``` 
 ### OUTPUT:
 
- ![output01](https://github.com/Adithya-Siddam/COLOR_CONVERSIONS_OF-IMAGE/assets/93427248/2aa4c323-d2e3-4452-a100-db8ada952c78)
+![WhatsApp Image 2024-02-23 at 09 20 47_5c95b7b9](https://github.com/22003264/COLOR_CONVERSIONS_OF-IMAGE/assets/119389139/1dc45a3d-ef8b-4d8e-9a11-2c4cd506c9d0)
+
 
 
 ### ii)Write the image
