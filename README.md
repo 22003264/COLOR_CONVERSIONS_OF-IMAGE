@@ -1,4 +1,4 @@
-# COLOR_CONVERSIONS_OF-IMAGE
+# EX-01 COLOR_CONVERSIONS_OF-IMAGE
 ## AIM
 To write a python program using OpenCV to do the following image manipulations.
 
@@ -14,76 +14,88 @@ iv)To perform the color conversion between RGB, BGR, HSV, and YCbCr color models
 ## Software Required:
 Anaconda - Python 3.7
 ## Algorithm:
-### Step1:
-Choose an image and save it as a filename.jpg ,
-### Step2:
-Use imread(filename, flags) to read the file.
-### Step3:
-Use imshow(window_name, image) to display the image.
-### Step4:
-Use imwrite(filename, image) to write the image.
-### Step5:
-End the program and close the output image windows.
-### Step6:
-Convert BGR and RGB to HSV and GRAY
-### Step7:
-Convert HSV to RGB and BGR
-### Step8:
-Convert RGB and BGR to YCrCb
-### Step9:
-Split and Merge RGB Image
-### Step10:
-Split and merge HSV Image
+ #### Step1: Choose an image and save it as a filename.jpg ,
+ #### Step2: Use imread(filename, flags) to read the file.
+ #### Step3: Use imshow(window_name, image) to display the image.
+ #### Step4: Use imwrite(filename, image) to write the image.
+ #### Step5: End the program and close the output image windows.
+ #### Step6: Convert BGR and RGB to HSV and GRAY
+ #### Step7: Convert HSV to RGB and BGR
+ #### Step8: Convert RGB and BGR to YCrCb
+ #### Step9: Split and Merge RGB Image
+ #### Step10: Split and merge HSV Image
 
-##### Program:
-### Developed By:
-### Register Number: 
+### Program:
 
-
-## Output:
+### Developed By:ONTEDDU SIRISHA
+### Register Number: 212222230103
+<table>
+  <tr>
+    <td width=50%>
 
 ### i) Read and display the image
-
-```python
-    import cv2
-    image=cv2.imread('dog.jpg',1)
-    image=cv2.resize(image,(300,300))
-    cv2.imshow('sirisha',image)
+```Python
+   import cv2
+    image=cv2.imread('peacock.jpg')
+    cv2.imshow('SIRISHA',image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
-```
-![image](https://github.com/22003264/COLOR_CONVERSIONS_OF-IMAGE/assets/119389139/4d2c22ea-b41b-4dac-ba50-a4a6c14e1d2b)
+``` 
+  </td>
+  <td>
+
+### OUTPUT:
+![image](https://github.com/22003264/COLOR_CONVERSIONS_OF-IMAGE/assets/119389139/b8b9a69b-9946-48b0-a046-3d0643480cdd)
 
 
-![image](https://github.com/22003264/COLOR_CONVERSIONS_OF-IMAGE/assets/119389139/8925c914-2c0c-4787-9833-23590601993a)
+  </td>
+  </tr>
+
+   <tr>
+    <td width=50%>
 
 ### ii)Write the image
-
-```python
+```Python
     import cv2
-    image=cv2.imread('dog.jpg',0)
+    image=cv2.imread('peacock.jpg',0)
     cv2.imwrite('demos.jpg',image)
 ```
-![Screenshot 2024-02-15 092418](https://github.com/Leann4468/COLOR_CONVERSIONS_OF-IMAGE/assets/121165979/51d0e6b2-d4df-4788-aad9-b915cec7f607)
+  </td>
+  <td>
+
+### OUTPUT:
+![O2](https://github.com/JananiSoundararajan/COLOR_CONVERSIONS_OF-IMAGE/assets/119477549/ec5c8983-f3d4-44de-9c37-be087c0f7a4d)
+
+
+  </td>
+  </tr>
+  <tr>
+    <td width=50%>
 
 ### iii)Shape of the Image
-
-```python
-    import cv2
-    image=cv2.imread('dop.jpg',1)
+```Python
+   import cv2
+    image=cv2.imread('peacock.jpg',1)
     print(image.shape)
 ```
-![image](https://github.com/Leann4468/COLOR_CONVERSIONS_OF-IMAGE/assets/121165979/ae32dcb6-54eb-4ce5-8c66-03d25335920a)
+  </td>
+  <td>
 
+### OUTPUT:
+![O3](https://github.com/JananiSoundararajan/COLOR_CONVERSIONS_OF-IMAGE/assets/119477549/e212692e-0645-471a-851c-ffdb77b95494)
 
+  </td>
+  </tr>
+  <tr>
+    <td>
+      
 ### iv)Access rows and columns
-
-```python
-import random
+```Python
+   import random
     import cv2
-    image=cv2.imread('dog.jpg',1)
-    image=cv2.resize(image,(500,500))
-    for i in range (250,500):
+    image=cv2.imread('peacock.jpg',1)
+    image=cv2.resize(image,(400,400))
+    for i in range (150,200):
       for j in range(image.shape[1]):
           image[i][j]=[random.randint(0,255),
                        random.randint(0,255),
@@ -92,34 +104,44 @@ import random
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 ```
-![Screenshot 2024-02-15 130641](https://github.com/Leann4468/COLOR_CONVERSIONS_OF-IMAGE/assets/121165979/657e161c-be5b-44d5-8b9e-000a9f5e0b1c)
+  </td>
+  <td width="50%">
 
-![image](https://github.com/Leann4468/COLOR_CONVERSIONS_OF-IMAGE/assets/121165979/16bc9ccf-3e76-48c5-be6e-525f33481336)
+### OUTPUT:
+![O4](https://github.com/JananiSoundararajan/COLOR_CONVERSIONS_OF-IMAGE/assets/119477549/0d190152-ff66-4efe-9295-98978bd09fc5)
 
-
+  </td>
+  </tr>
+  <tr>
+    <td width=50%>
+      
 ### v)Cut and paste portion of image
 
-```python
-  import cv2
-  image=cv2.imread('dog.jpg',1)
-  image=cv2.resize(image,(300,300))
-  tag =image[150:200,110:160]
-  image[110:160,150:200] = tag
-  cv2.imshow('image1',image)
-  cv2.waitKey(0)
-  cv2.destroyAllWindows()
+ ```Python
+   import cv2
+   image=cv2.imread('peacock.jpg',1)
+   image=cv2.resize(image,(400,400))
+   tag =image[150:200,110:160]
+   image[110:160,150:200] = tag
+   cv2.imshow('partimage1',image)
+   cv2.waitKey(0)
+   cv2.destroyAllWindows()
 ```
+  </td>
+  <td>
+    
+### OUTPUT:
+![O5](https://github.com/JananiSoundararajan/COLOR_CONVERSIONS_OF-IMAGE/assets/119477549/1dbf0024-e307-4698-ad76-3434995956f1)
 
-![Screenshot 2024-02-15 130948](https://github.com/Leann4468/COLOR_CONVERSIONS_OF-IMAGE/assets/121165979/7ffe4b36-c8d7-4902-a3a1-e9720647682e)
-
-![image](https://github.com/Leann4468/COLOR_CONVERSIONS_OF-IMAGE/assets/121165979/55d4b30d-eb08-41e2-917c-12421d56e475)
+  </td>
+  </tr>
+</table>
 
 ### vi) BGR and RGB to HSV and GRAY
-
-```python
+```Python
 import cv2
-img = cv2.imread('dog.jpg',1)
-img = cv2.resize(img,(200,200))
+img = cv2.imread('peacock.jpg',1)
+img = cv2.resize(img,(300,200))
 cv2.imshow('Original Image',img)
 
 hsv1 = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
@@ -138,17 +160,14 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-![Screenshot 2024-02-15 131128](https://github.com/Leann4468/COLOR_CONVERSIONS_OF-IMAGE/assets/121165979/a3006cdb-b35a-419c-8f88-a986de2072c4)
-
-![Screenshot 2024-02-15 093233](https://github.com/Leann4468/COLOR_CONVERSIONS_OF-IMAGE/assets/121165979/cc62b399-3a2b-4fdf-8083-4ba55990d25c)
-
+### OUTPUT:
+![O6](https://github.com/JananiSoundararajan/COLOR_CONVERSIONS_OF-IMAGE/assets/119477549/39d5394c-bde6-459a-bbcf-378c305bffc5)
 
 ### vii) HSV to RGB and BGR
-
-```python
+```Python
 import cv2
-img = cv2.imread('dog.jpg')
-img = cv2.resize(img,(200,200))
+img = cv2.imread('peacock.jpg')
+img = cv2.resize(img,(300,200))
 
 img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
 cv2.imshow('Original HSV Image',img)
@@ -162,17 +181,17 @@ cv2.imshow('HSV2RGB',BGR)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![Screenshot 2024-02-15 131211](https://github.com/Leann4468/COLOR_CONVERSIONS_OF-IMAGE/assets/121165979/88206ce0-702d-4986-aa3c-ad55dc8fc5b5)
 
-![Screenshot 2024-02-15 094233](https://github.com/Leann4468/COLOR_CONVERSIONS_OF-IMAGE/assets/121165979/61f824ad-b53d-47c5-adce-76572eb41d2a)
+### OUTPUT:
+![O7](https://github.com/JananiSoundararajan/COLOR_CONVERSIONS_OF-IMAGE/assets/119477549/3875f6ec-f3d9-4d08-ad0f-1d6ea9a70b47)
+
 
 
 ### viii) RGB and BGR to YCrCb
-
-```python
+```Python
 import cv2
-img = cv2.imread('dog.jpg')
-img = cv2.resize(img,(200,200))
+img = cv2.imread('peacock.jpg')
+img = cv2.resize(img,(300,200))
 cv2.imshow('Original RGB Image',img)
 
 YCrCb1 = cv2.cvtColor(img, cv2.COLOR_BGR2YCrCb)
@@ -184,16 +203,17 @@ cv2.imshow('BGR-2-YCrCb',YCrCb2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![Screenshot 2024-02-15 131312](https://github.com/Leann4468/COLOR_CONVERSIONS_OF-IMAGE/assets/121165979/57380cdc-e99a-480f-82a9-5fa8600afc0a)
 
-![Screenshot 2024-02-15 094514](https://github.com/Leann4468/COLOR_CONVERSIONS_OF-IMAGE/assets/121165979/4d99ec3c-85c2-46cc-874c-b417de42929e)
+### OUTPUT:
+![O8](https://github.com/JananiSoundararajan/COLOR_CONVERSIONS_OF-IMAGE/assets/119477549/4693bba5-570d-4d42-b98c-bc148d60560a)
+
 
 
 ### ix) Split and merge RGB Image
-```python
+```Python
 import cv2
-img = cv2.imread('dog.jpg',1)
-img = cv2.resize(img,(200,200))
+img = cv2.imread('peacock.jpg',1)
+img = cv2.resize(img,(300,200))
 
 R = img[:,:,2]
 G = img[:,:,1]
@@ -209,15 +229,17 @@ cv2.imshow('Merged RGB image',merged)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![Screenshot 2024-02-15 131359](https://github.com/Leann4468/COLOR_CONVERSIONS_OF-IMAGE/assets/121165979/90f840e4-7d15-435a-8e06-17513b052240)
 
-![Screenshot 2024-02-15 095036](https://github.com/Leann4468/COLOR_CONVERSIONS_OF-IMAGE/assets/121165979/f66751f7-ec00-406d-894a-5d84df99c50f)
+### OUTPUT:
+![O9](https://github.com/JananiSoundararajan/COLOR_CONVERSIONS_OF-IMAGE/assets/119477549/47f359ae-a89d-4ff7-a3be-ba58d0b16e27)
+
+
 
 ### x) Split and merge HSV Image
-```python
+```Python
 import cv2
-img = cv2.imread("dog.jpg",1)
-img = cv2.resize(img,(200,200))
+img = cv2.imread("peacock.jpg",1)
+img = cv2.resize(img,(300,200))
 img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
 
 H,S,V=cv2.split(img)
@@ -232,17 +254,9 @@ cv2.imshow('Merged',merged)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![Screenshot 2024-02-15 131434](https://github.com/Leann4468/COLOR_CONVERSIONS_OF-IMAGE/assets/121165979/257b3f94-b302-4733-a559-ffb17387b339)
 
-![Screenshot 2024-02-15 095145](https://github.com/Leann4468/COLOR_CONVERSIONS_OF-IMAGE/assets/121165979/5415b9f6-092d-42fa-a288-30c25c2025c9)
-
+### OUTPUT:
+![O10](https://github.com/JananiSoundararajan/COLOR_CONVERSIONS_OF-IMAGE/assets/119477549/8143fe85-9354-45f0-9b63-1bc68df9c40c)
 
 ## Result:
 Thus the images are read, displayed, and written ,and color conversion was performed between RGB, HSV and YCbCr color models successfully using the python program.
-
-
-
-
-
-
-
